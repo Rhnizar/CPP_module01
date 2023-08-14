@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/08/14 10:28:47 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/08/14 17:08:30 by rrhnizar         ###   ########.fr        #
+#    Created: 2023/08/14 17:02:13 by rrhnizar          #+#    #+#              #
+#    Updated: 2023/08/14 17:17:57 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 Name = zombie
 
-SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+SRC = main.cpp Zombie.cpp zombieHorde.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
