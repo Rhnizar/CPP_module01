@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:05:02 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 17:11:02 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/14 19:59:52 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ public:
 	Zombie();
 	~Zombie();
 	void		announce( void );
-	void		setName(std::string n){name = n;}
-	std::string	getName(){return name;}
+	void		setName(std::string n);
+	std::string	getName();
 };
 
 Zombie* zombieHorde( int N, std::string name );

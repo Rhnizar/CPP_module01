@@ -1,45 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/14 17:05:11 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 19:59:40 by rrhnizar         ###   ########.fr       */
+/*   Created: 2023/08/14 20:10:19 by rrhnizar          #+#    #+#             */
+/*   Updated: 2023/08/14 20:50:48 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "HumanA.hpp"
 
-Zombie* newZombie( std::string name )
+HumanA::HumanA(std::string namee, Weapon WeaponHumanAa)
 {
-	Zombie* NewZombie = new Zombie;
-	NewZombie->setName(name);
-	return NewZombie;
+	name = namee;
+	WeaponHumanA = WeaponHumanAa;
 }
 
-Zombie::Zombie()
+std::string	HumanA::getName()
 {
-	name = "test";
+	return name;
 }
 
-Zombie::~Zombie()
-{
-	std::cout << name << " zombie destroyed !" << std::endl;
-}
-
-void	Zombie::announce()
-{
-	std::cout << name << ":" << " BraiiiiiiinnnzzzZ..." <<std::endl;
-}
-
-void	Zombie::setName(std::string n)
+void	HumanA::setName(std::string n)
 {
 	name = n;
 }
 
-std::string	Zombie::getName()
-{
-	return name;
-}
+// void	attack()
+// {
+
+// }

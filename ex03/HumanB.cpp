@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/14 17:05:31 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 19:59:15 by rrhnizar         ###   ########.fr       */
+/*   Created: 2023/08/14 20:13:07 by rrhnizar          #+#    #+#             */
+/*   Updated: 2023/08/14 20:40:40 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
 
-Zombie* zombieHorde( int N, std::string name )
+#include "HumanB.hpp"
+
+std::string	HumanB::getName()
 {
-	Zombie*	NewZombie = new Zombie[N];
-	for (int i = 0; i < N; i++)
-	{
-		NewZombie[i].setName(name);
-		NewZombie[i].announce();
-	}
-
-	delete [] NewZombie;
-	return NewZombie;
+	return name;
 }
+
+void	HumanB::setName(std::string n)
+{
+	name = n;
+}
+
+// void	attack()
+// {
+// 	std::cout << name << 
+// }

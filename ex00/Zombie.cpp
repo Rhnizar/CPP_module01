@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 11:57:16 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 16:30:14 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/14 19:58:40 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,14 @@ Zombie::~Zombie()
 void	Zombie::announce()
 {
 	std::cout << name << ":" << " BraiiiiiiinnnzzzZ..." <<std::endl;
+}
+
+void	Zombie::setName(std::string n)
+{
+	name = n;
+}
+
+std::string	Zombie::getName()
+{
+	return name;
 }

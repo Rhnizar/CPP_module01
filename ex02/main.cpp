@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/14 17:05:31 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 19:59:15 by rrhnizar         ###   ########.fr       */
+/*   Created: 2023/08/14 18:39:39 by rrhnizar          #+#    #+#             */
+/*   Updated: 2023/08/14 18:54:40 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-Zombie* zombieHorde( int N, std::string name )
+int main()
 {
-	Zombie*	NewZombie = new Zombie[N];
-	for (int i = 0; i < N; i++)
-	{
-		NewZombie[i].setName(name);
-		NewZombie[i].announce();
-	}
-
-	delete [] NewZombie;
-	return NewZombie;
+	std::string str = "HI THIS IS BRAIN";
+	std::string 	*stringPTR = &str;
+	std::string&	stringREF = str;
+	std::cout << "value of the string variable : " << str << std::endl;
+	std::cout << "value pointed to by stringPTR : " << *stringPTR << std::endl;
+	std::cout << " value pointed to by stringREF : " << stringREF << std::endl;
+	return 0;
 }

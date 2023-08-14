@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/14 17:05:31 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 19:59:15 by rrhnizar         ###   ########.fr       */
+/*   Created: 2023/08/14 19:01:12 by rrhnizar          #+#    #+#             */
+/*   Updated: 2023/08/14 21:03:50 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef	WEAPON
+#define	WEAPON
 
-Zombie* zombieHorde( int N, std::string name )
+#include <iostream>
+
+class Weapon
 {
-	Zombie*	NewZombie = new Zombie[N];
-	for (int i = 0; i < N; i++)
-	{
-		NewZombie[i].setName(name);
-		NewZombie[i].announce();
-	}
+private:
+	std::string	type;
+public:
 
-	delete [] NewZombie;
-	return NewZombie;
-}
+	Weapon(std::string	typee);
+	Weapon();
+	std::string	getType();
+	void		setType(std::string t);
+};
+
+
+
+#endif
