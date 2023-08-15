@@ -1,56 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.cpp                                           :+:      :+:    :+:   */
+/*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/14 16:39:32 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/15 17:13:14 by rrhnizar         ###   ########.fr       */
+/*   Created: 2023/08/15 13:33:03 by rrhnizar          #+#    #+#             */
+/*   Updated: 2023/08/15 17:14:03 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <iostream>
-
-// int	main()
-// {
-// 	// int	*p = new int;
-// 	// std::string *str = new std::string;
-// 	// *p = 1;
-// 	// *str = "hjshg";
-
-// 	// std::cout << *str << std::endl;
-	
-// 	// std::cout << *p << std::endl;
-// 	// delete p;
-// 	// delete str;
-
-// 	int	size;
-// 	std::cin >> size;
-// 	std::string *x = new std::string[size];
-// 	for (int i = 0; i < size ; i++)
-// 		 std::cin >> x[i];
-// 	for (int i = 0; i < size ; i++)
-// 		 std::cout << x[i] << std::endl;
-	
-// 	delete []x;
-// 	return 0;
-// }
-
-
-#include <iostream>
-#include <string>
-
-class Harl {
-private:
-    void debug();
-    void info();
-    void warning();
-    void error();
-
-public:
-    void complain(std::string level);
-};
+#include "Harl.hpp"
 
 void    Harl::debug( void )
 {
@@ -86,11 +46,4 @@ void Harl::complain(std::string level) {
         return ;
     }
     (this->*funcptr)();
-}
-
-int main() 
-{
-
-    Harl    harl;
-    harl.complain("infoo");
 }
