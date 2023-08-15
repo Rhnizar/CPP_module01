@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 19:01:12 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 21:03:50 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/15 10:39:14 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ private:
 public:
 
 	Weapon(std::string	typee);
-	Weapon();
+	// Weapon();
 	std::string	getType();
 	void		setType(std::string t);
 };
