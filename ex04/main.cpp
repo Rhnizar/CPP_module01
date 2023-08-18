@@ -6,14 +6,13 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 10:42:38 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/15 13:16:39 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/18 17:30:01 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
 
 int main(int argc, char **argv)
 {

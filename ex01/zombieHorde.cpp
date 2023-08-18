@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:05:31 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 19:59:15 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/18 10:22:46 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ Zombie* zombieHorde( int N, std::string name )
 		NewZombie[i].setName(name);
 		NewZombie[i].announce();
 	}
-
 	delete [] NewZombie;
 	return NewZombie;
 }

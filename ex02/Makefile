@@ -6,11 +6,11 @@
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/14 18:39:01 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/08/14 18:39:25 by rrhnizar         ###   ########.fr        #
+#    Updated: 2023/08/18 10:26:49 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Name = zombie
+Name = exec
 
 SRC = main.cpp
 

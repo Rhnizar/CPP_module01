@@ -6,11 +6,14 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 13:33:03 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/15 17:14:03 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/18 17:53:48 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
+
+Harl::Harl()
+{}
 
 void    Harl::debug( void )
 {
@@ -29,7 +32,8 @@ void    Harl::error( void )
     std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
-void Harl::complain(std::string level) {
+void Harl::complain(std::string level) 
+{
     void (Harl::*funcptr)() = nullptr;
 
     if (level == "debug")

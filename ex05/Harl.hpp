@@ -6,12 +6,12 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 13:32:15 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/15 17:14:37 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/18 17:45:22 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HARL
-#define HARL
+#ifndef HARL_HPP
+#define HARL_HPP
 
 #include <iostream>
 
@@ -22,6 +22,7 @@ class Harl{
 		void warning( void );
 		void error( void );
 	public:
-		void complain( std::string level ); 
+		Harl();
+		void complain( std::string level );
 };
 #endif

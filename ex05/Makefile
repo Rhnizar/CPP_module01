@@ -6,11 +6,11 @@
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/15 13:30:33 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/08/15 17:15:19 by rrhnizar         ###   ########.fr        #
+#    Updated: 2023/08/18 17:44:52 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Name = zombie
+Name = harl
 
 SRC = main.cpp Harl.cpp
 

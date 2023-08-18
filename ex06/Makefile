@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/08/14 18:57:52 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/08/18 11:55:35 by rrhnizar         ###   ########.fr        #
+#    Created: 2023/08/15 17:16:38 by rrhnizar          #+#    #+#              #
+#    Updated: 2023/08/15 17:19:45 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Name = weapon
+Name = zombie
 
-SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
