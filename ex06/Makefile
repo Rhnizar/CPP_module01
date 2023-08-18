@@ -6,13 +6,13 @@
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/15 17:16:38 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/08/15 17:19:45 by rrhnizar         ###   ########.fr        #
+#    Updated: 2023/08/18 22:04:56 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Name = zombie
+Name = harl
 
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

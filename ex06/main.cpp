@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 17:18:23 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/15 17:19:01 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/18 22:22:50 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int main()
 {
-	std::cout << "rida\n";
+	Harl    harl;
+    harl.complain("debug");
 	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 13:33:03 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/18 17:53:48 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/18 22:49:48 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,20 +34,27 @@ void    Harl::error( void )
 
 void Harl::complain(std::string level) 
 {
-    void (Harl::*funcptr)() = nullptr;
-
-    if (level == "debug")
-        funcptr = &Harl::debug;
-    else if (level == "info")
-        funcptr = &Harl::info;
-    else if (level == "warning")
-        funcptr = &Harl::warning;
-    else if (level == "error")
-        funcptr = &Harl::error;
-    else
+    // void (Harl::*funcptr)() = nullptr;
+    void (Harl::*funcptr[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+    std::string levels[4] = {"debug", "info", "warning", "error"};
+    
+    for (int i = 0; i < 4; i++)
     {
-        std::cout << "invalid !";
-        return ;
+        if (levels[i] == level)
+            (this->*funcptr[i])();
     }
-    (this->*funcptr)();
+    // if (level == "debug")
+    //     funcptr = &Harl::debug;
+    // else if (level == "info")
+    //     funcptr = &Harl::info;
+    // else if (level == "warning")
+    //     funcptr = &Harl::warning;
+    // else if (level == "error")
+    //     funcptr = &Harl::error;
+    // else
+    // {
+    //     std::cout << "invalid !";
+    //     return ;
+    // }
+    // (this->*funcptr)();
 }
