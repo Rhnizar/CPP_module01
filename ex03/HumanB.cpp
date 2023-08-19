@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 20:13:07 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/18 15:37:34 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/19 11:44:38 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Weapon *HumanB::getWeapon()
 	return WeaponHumanB;
 }
 
-void	HumanB::setWeapon(Weapon &WeaponHumanBb)
+void	HumanB::setWeapon(Weapon& WeaponHumanBb)
 {
 	WeaponHumanB = &WeaponHumanBb;
 }

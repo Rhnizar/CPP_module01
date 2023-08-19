@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 13:31:59 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/18 22:50:11 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/19 12:19:22 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int main()
 {
 	Harl    harl;
-    harl.complain("error");
+    harl.complain("DEBUG");
 	return 0;
 }

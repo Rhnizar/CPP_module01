@@ -6,12 +6,12 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 11:55:39 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/14 19:57:16 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/19 11:00:29 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE
-#define ZOMBIE
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
 #include <iostream>
 

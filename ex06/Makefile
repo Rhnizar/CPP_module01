@@ -6,11 +6,11 @@
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/15 17:16:38 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/08/18 22:04:56 by rrhnizar         ###   ########.fr        #
+#    Updated: 2023/08/19 12:06:17 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Name = harl
+Name = harlFilter
 
 SRC = main.cpp Harl.cpp
 

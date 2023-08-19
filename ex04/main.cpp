@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 10:42:38 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/18 17:30:01 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/19 11:52:27 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 		while (std::getline(inputFile, line))
 		{
 			size_t found = line.find(s1);
-			while (found != std::string::npos) 
+			while (found != std::string::npos)
 			{
         		line.replace(found, s1.length(), s2);
         		found = line.find(s1, found + s2.length());
